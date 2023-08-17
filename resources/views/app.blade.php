@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <title>Fazla Rabby</title>
+    <title>{{ $seo->title }}</title>
     {{--    <meta name="description" content="{{$seo->description}}"/> --}}
     {{--    <meta name="keywords" content="{{$seo->keywords}}"/> --}}
 

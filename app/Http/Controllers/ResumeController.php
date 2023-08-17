@@ -8,11 +8,14 @@ use Illuminate\Support\Facades\DB;
 class ResumeController extends Controller
 {
     function page(Request $request)
+
     {
-        return view('pages.resume');
+        $seo = DB::table('seoproperties')->where('pageName', '=', 'Resume')->first();
+        return view('pages.resume', ['seo' => $seo]);
     }
     function resumeLink(Request $request)
     {
+
 
         return DB::table('resumes')->first();
     }
